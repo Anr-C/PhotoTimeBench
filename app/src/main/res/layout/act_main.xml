@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lckiss.photobench.MainAct">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:paddingVertical="16dp"
+        android:text="帮助说明"
+        app:layout_constraintBottom_toTopOf="@id/trans"
+        app:layout_constraintEnd_toEndOf="@id/trans"
+        app:layout_constraintStart_toStartOf="@id/trans" />
+
+    <TextView
+        android:id="@+id/trans"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/bg"
+        android:gravity="center"
+        android:paddingVertical="16dp"
+        android:text="批量处理"
+        app:layout_constraintBottom_toTopOf="@id/refresh"
+        app:layout_constraintEnd_toEndOf="@id/refresh"
+        app:layout_constraintStart_toStartOf="@id/refresh" />
+
+    <TextView
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/bg"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="16dp"
+        android:text="刷新"
+        app:layout_constraintBottom_toTopOf="@id/back"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/bg"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="16dp"
+        android:text="返回"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
